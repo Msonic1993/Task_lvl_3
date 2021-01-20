@@ -1,0 +1,185 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+// variables
+
+$main-font: 'Roboto', sans-serif;
+
+body {
+    padding: 50px;
+    background: white;
+    @media only screen and (max-width: 640px) {
+        background: #fff;
+        padding: 0px;
+    }
+}
+.wrapper{
+    padding-top: 100px;
+    max-width: 1280px;
+    height: 608px;
+    background: #f0f0f0;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    @media only screen and (max-width: 320px) {
+        width: 318px;
+        max-height: 629px;
+        background: #f0f0f0;
+        padding: 19px !important;
+    }
+    @media only screen and (max-width: 640px) {
+        max-height: 715px;
+    }
+    @media only screen and (max-width: 768px) {
+        max-width: 1280px;
+        height: 862px;
+        background: #f0f0f0;
+        padding: 50px 50px;
+    }
+}
+.container {
+    padding: 0px 0px 0px;
+    background: white;
+    max-width: 1140px;
+    height: 407px;
+    @media only screen and (max-width: 320px) {
+        width: 276px!important;
+        height: 633px!important;
+    }
+    @media only screen and (max-width: 640px) {
+        width: 437px;
+        max-height: 611px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        background: #fff;
+        max-width: 1140px;
+        height: 760px;
+    }
+    &__image {
+        display: inline-block;
+        max-width:570px;
+        height: 408px;
+        vertical-align: middle;
+        @media only screen and (max-width: 320px) {
+            display: block;
+            width: 100%;
+            vertical-align: middle;
+        }
+        @media only screen and (max-width: 640px) {
+            display: block;
+            max-width: 437px;
+            height: 290px;
+            vertical-align: middle;
+        }
+    }
+    &__text {
+        display: inline-block;
+        width: 350px;
+        height: 127px;
+        margin-left: 110px;
+        position: fixed;
+        margin-top: 86px;
+        @media only screen and (max-width: 320px) {
+            display: block!important;
+            width: 245px!important;
+            height: 96px!important;
+            margin-left: 12px!important;
+            margin-top: 28px!important;
+        }
+        @media only screen and (max-width: 640px) {
+            display: block;
+            width: 350px;
+            height: 127px;
+            margin-left: 35px;
+            position: fixed;
+            margin-top: 50px;
+        }
+        @media only screen and (max-width: 1280px) {
+            display: inline-block;
+            width: 350px;
+            height: 127px;
+            margin-left: 54px;
+            position: fixed;
+            margin-top: 86px;
+        }
+    .btn {
+        background: #E4C1AE;
+        border-radius: 25px;
+        width: 135px;
+        height: 47px;
+        color: white;
+        font-family: $main-font;
+        font-weight: 700;
+        margin-top: 35px;
+        float: right;
+        @media only screen and (max-width: 640px) {
+            background: #E4C1AE;
+            border-radius: 25px;
+            width: 135px;
+            height: 47px;
+            color: white;
+            font-family: $main-font;
+            font-weight: 700;
+            float: right;
+        }
+        }
+
+        h2{
+            font-size: 42px;
+            font-family: $main-font;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 16px;
+            font-family: $main-font;
+            font-weight: 300;
+            position: relative;
+            margin-top: 43px;
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{# Variables:
+    - title
+    - box
+        - title
+        - content
+        - images_default
+            - large | medium | small
+                - url
+                - width
+                - height
+        - images
+            - url
+            - width
+            - height
+#}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+<div class="container">
+    <img class="container__image" src="{{ box.images_default.large.url }}">
+    <div class="container__text">
+        <h2>{{ box.title }}</h2>
+        <p>{{ box.content }}</p>
+        <button type="button" class="btn">Button</button>
+    </div>
+    <div class="modal fade" id="ModalFade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">{{ box.title }}</h4>
+                </div>
+                <div class="modal-body">
+                    <p>{{ box.content }}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+
+        </div>
+</div>
+</div>
+</div>
+{% endblock %}
