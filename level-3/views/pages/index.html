@@ -18,10 +18,10 @@
 
 {% block content %}
 
-<div class="wrapper">
 <div class="container">
-    <img class="container__image" src="{{ box.images_default.large.url }}">
-    <div class="container__text">
+<div class="col">
+    <img class="col__img" src="{{ box.images_default.large.url }}">
+    <div class="col__text-justify">
         <h2>{{ box.title }}</h2>
         <p>{{ box.content }}</p>
         <button type="button" class="btn">Button</button>
