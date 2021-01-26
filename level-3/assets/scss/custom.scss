@@ -83,7 +83,7 @@ body {
         display: inline-block;
         max-width:570px;
         height: 408px;
-        vertical-align: middle;
+        vertical-align: top;
 
     }
     &__text-justify {
@@ -91,31 +91,8 @@ body {
         width: 350px;
         height: 127px;
         margin-left: 110px;
-        position: fixed;
         margin-top: 86px;
-        //@media only screen and (max-width: 320px) {
-        //    display: block!important;
-        //    width: 245px!important;
-        //    height: 96px!important;
-        //    margin-left: 12px!important;
-        //    margin-top: 28px!important;
-        //}
-        //@media only screen and (max-width: 640px) {
-        //    display: block;
-        //    width: 350px;
-        //    height: 127px;
-        //    margin-left: 35px;
-        //    position: fixed;
-        //    margin-top: 50px;
-        //}
-        //@media only screen and (max-width: 1280px) {
-        //    display: inline-block;
-        //    width: 350px;
-        //    height: 127px;
-        //    margin-left: 54px;
-        //    position: fixed;
-        //    margin-top: 86px;
-        //}
+ 
     .btn {
         background: #E4C1AE;
         border-radius: 25px;
